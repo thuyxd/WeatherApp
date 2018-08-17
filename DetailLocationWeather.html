@@ -1,0 +1,101 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="leaflet-search.min.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="day-5-weather-forecast.js"></script>
+    <script src="jquery-3.3.1.min.js"></script>
+</head>
+<body>
+<div id="windyty"></div>
+
+<div class="locate">
+    <button class="btnlocation" id="btnlocal" title="Show your location"><img
+            src="img/location.png"/></button>
+</div>
+
+
+<div class="foreCast">
+    <div id="table-foreCast">
+        <table>
+            <tr id="day" class="title">
+                <td class="day5Title"></td>
+            </tr>
+            <tr id="time" class="title">
+                <td class="day5title">Time (GMT+0700)</td>
+
+            </tr>
+            <tr id="iconweather" class="title">
+                <td class="day5title">Weather icon</td>
+
+            </tr>
+            <tr id="temp" class="title">
+                <td class="day5title">Temparature (&deg;C)</td>
+            </tr>
+            <tr id="wind" class="title">
+                <td class="day5title">Wind (m/s)</td>
+            </tr>
+            <tr id="humidity" class="title">
+                <td class="day5title">Humidity (%)</td>
+            </tr>
+            <!--<tr id="rain" class="title">-->
+            <!--<td class="day5title">Rain (mm) </td>-->
+            <!--</tr>-->
+        </table>
+    </div>
+</div>
+
+<div id="menu-weather">
+    <ul>
+        <li class="listBtn" data-weather="wind">
+            <button id="btnWind" class="btn"><img src="img/wind.png" height="27px" width="25px"/></button>
+            <span class="tooltiptext">Wind</span>
+        </li>
+        <li class="listBtn" data-weather="temp">
+            <button id="btnTemp" class="btn"><img src="img/temperature.png" height="27px" width="25px"/></button>
+            <span class="tooltiptext">Temperature</span>
+        </li>
+        <li class="listBtn" data-weather="rh">
+            <button id="btnHumidity" class="btn"><img src="img/humidity.png" height="27px" width="25px"/></button>
+            <span class="tooltiptext">Humidity</span>
+        </li>
+        <li  class="listBtn" data-weather="clouds">
+            <button id="cloud" class="btn"><img src="img/cloud.png" height="27px" width="25px"/></button>
+            <span class="tooltiptext">Cloud</span>
+        </li>
+        <li  class="listBtn" data-weather="waves">
+            <button id="waves" class="btn"><img src="img/wave.png" height="27px" width="25px"/></button>
+            <span class="tooltiptext">Waves</span>
+        </li>
+        <li class="listBtn" data-weather="pressure">
+            <button id="pressure" class="btn"><img src="img/pressure.png" height="27px" width="25px"/></button>
+            <span class="tooltiptext">Pressure</span>
+        </li>
+    </ul>
+</div>
+
+<div class = "contact">
+    <ul>
+        <li>
+            <button class ="myBtn" ><a href = "https://github.com/kullov/WeatherApp" target="_blank"><img src="img/icons8-github-32.png"></a> </button>
+        </li>
+        <li>
+            <button class="myBtn"><a href ="https://www.facebook.com/profile.php?id=100011151400332" target="_blank"><img src="img/icons8-facebook-24.png" /> </a></button>
+        </li>
+        <li>
+            <button class = "myBtn"><a href="https://www.instagram.com/kullov/" target="_blank"><img src = "img/icons8-instagram-24.png" /></a></button>
+        </li>
+        <li>
+            <button class ="myBtn"><a href ="" target="_blank"><img src ="img/icons8-twitter-24.png" ></a></button>
+        </li>
+    </ul>
+</div>
+
+
+
+<script src="leaflet.js"></script>
+<script src="windyty.js"></script>
+<script src="leaflet-search.min.js"></script>
+</body>
+</html>
